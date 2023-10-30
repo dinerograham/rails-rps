@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
     render({:template => "paper"})
   end
 
-  def paper
+  def scissors
     @opponent = ["rock","paper","scissors"].sample
 
     if @opponent == "scissors"
